@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="Letmeask" src="./src/assets/images/letmeask-cover.png">
+</p>
+
 # Letmeask - em desenvolvimento :construction:
 
 Aplicação web para compartilhamento, classificação (baseada na quantidade de likes) e destaque de perguntas! :sparkles:
@@ -28,3 +32,14 @@ Crie uma sala para receber perguntas. Ao criar, um código será gerado e você 
 - Autenticação com firebase
 - Contexto dentro do React - contrução de uma Context API para autenticação
 - Utilização do useEffect
+
+#### Dia 03
+- Fluxo de criação e acesso das salas - criar referência, inserir, buscar no firebase
+- Criar regras no Realtime Database 
+- Formulários no React
+- Eventos do Firebase
+
+#### Adicionais TODO
+- [ ] dark mode
+- [ ] responsivo
+- [ ] erros/alertas, sugestão: react hot toast
