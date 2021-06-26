@@ -22,12 +22,24 @@
             button {
                 height: 40px;
             }
+
+            .btn-toggle {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+              
+                
+                img {
+                    width: 30px;
+                }
+            }
         }
     }
 
     main {
         max-width: 800px;
         margin: 0 auto;
+        padding: 0px 20px;
 
         .room-title {
             margin: 32px 0 24px;
@@ -42,7 +54,7 @@
 
             span {
                 margin-left: 16px;
-                background-color: #e559f9;
+                background-color: #BD64D6;
                 border-radius: 100px;
                 padding: 8px 16px;
                 color: #FFF;
@@ -96,7 +108,7 @@
                         background: transparent;
                         border: 0;
                         font-size: 14px;
-                        color: #835AFD;
+                        color: #FF93D6;
                         text-decoration: underline;
                         font-size: 14px;
                         font-weight: 500;
@@ -110,5 +122,59 @@
         .question-list {
             margin-top: 32px;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #page-room {
+        header {
+            .content {
+                flex-direction: column;
+                gap: 16px;
+                align-items: flex-start;
+
+                > img {
+                    max-height: unset;
+                    width: 200px;
+                }
+
+                > div {
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                .btn-toggle {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    
+                }
+            }
+        }
+
+        main {
+            max-width: 750px;
+
+            .question-list {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #page-room {
+        header {
+            .content {
+               
+                align-items: center;
+
+                > div {
+                    flex-direction: column;
+                }
+            }
+        }
+
+     
     }
 }

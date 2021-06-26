@@ -47,8 +47,9 @@ Crie uma sala para receber perguntas. Ao criar, um código será gerado e você 
 - Hospedagem do projeto
 
 #### Adicionais TODO 
-- [ ] dark mode
-- [ ] responsivo
+- [ ] dark mode - salvando escolha no localstorage
+- [x] responsivo
+- [x] tema novo
 - [ ] erros/alertas, sugestão: react hot toast
 - [ ] criar modais (react-modal)
 - [ ] separar pasta de componentes

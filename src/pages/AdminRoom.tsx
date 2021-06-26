@@ -1,11 +1,10 @@
-import logoImg from '../assets/images/logo.svg'
+import logoImg from '../assets/images/letmeask-logo-1.png'
 
 import { useHistory, useParams} from 'react-router-dom'
 import deleteImg from '../assets/images/delete.svg'
 import checkImg from '../assets/images/check.svg'
 import answerImg from '../assets/images/answer.svg'
 
-import '../styles/room.scss';
 import { RoomCode } from './../components/RoomCode';
 // import { useAuth } from './../hooks/useAuth';
 // import { database } from '../services/firebase';
@@ -13,7 +12,12 @@ import { Question } from './../components/Question';
 import { useRoom } from './../hooks/useRoom';
 import { Button } from './../components/Button';
 import { database } from '../services/firebase';
+import { useTheme } from './../hooks/useTheme';
 
+import lightImg from '../assets/images/sun.png'
+import darkImg from '../assets/images/moon.png'
+
+import '../styles/room.scss';
 
 type RoomParams = {
     id: string,
@@ -25,6 +29,7 @@ export function AdminRoom() {
     const history = useHistory();
     const roomId = params.id;
     const { title, questions } = useRoom(roomId);
+    const { theme, toggleTheme } = useTheme();
 
     async function handleEndRoom() {
         await database.ref(`rooms/${roomId}`).update({
@@ -60,12 +65,18 @@ export function AdminRoom() {
                     <div>     
                         <RoomCode code={params.id}/>
                         <Button isOutlined onClick={handleEndRoom}>Encerrar sala</Button>
+                        <button onClick={toggleTheme} className="btn-toggle">
+                            {theme === 'light' ?
+                                <img src={lightImg} alt="Alterar tema do site" />
+                                : <img src={darkImg} alt="Alterar tema do site" />
+                            }
+                        </button>
                     </div>
                 </div>
             </header>
             <main>
                 <div className="room-title">
-                    <h1>Sala {title}</h1>
+                    <h1>{title}</h1>
                     {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
                 </div>
 
