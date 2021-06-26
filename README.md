@@ -1,6 +1,4 @@
-<p align="center">
   <img alt="Letmeask" src="./src/assets/images/letmeask-cover.png">
-</p>
 
 # Letmeask - em desenvolvimento :construction:
 
@@ -39,7 +37,20 @@ Crie uma sala para receber perguntas. Ao criar, um código será gerado e você 
 - Formulários no React
 - Eventos do Firebase
 
-#### Adicionais TODO
+#### Dia 04
+- Uso de hooks e custom hooks
+- Tipagem ReactNode (qualquer conteudo aceitável jsx)
+- Adicionando novas funcionalidades às perguntas
+
+#### Dia 05
+- Terminando funcionalidades do admin
+- Hospedagem do projeto
+
+#### Adicionais TODO 
 - [ ] dark mode
 - [ ] responsivo
 - [ ] erros/alertas, sugestão: react hot toast
+- [ ] criar modais (react-modal)
+- [ ] separar pasta de componentes
+- [ ] retirar destaque/marcar como respondida da pergunta 
+- [ ] deploy github pages
