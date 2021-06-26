@@ -47,7 +47,7 @@ Crie uma sala para receber perguntas. Ao criar, um código será gerado e você 
 - Hospedagem do projeto
 
 #### Adicionais TODO 
-- [ ] dark mode - salvando escolha no localstorage
+- [x] dark mode - salvando escolha no localstorage
 - [x] responsivo
 - [x] tema novo
 - [ ] erros/alertas, sugestão: react hot toast
