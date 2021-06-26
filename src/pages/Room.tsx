@@ -73,7 +73,7 @@ export function Room() {
     }
 
     return (
-        <div id="page-room">
+        <div id="page-room" className={theme}>
             <header>
                 <div className="content">
                     <img src={logoImg} alt="Letmeask logo"/>

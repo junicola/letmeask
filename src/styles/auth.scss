@@ -151,6 +151,38 @@
     }
 }
 
+#page-auth.dark {
+    aside {
+        strong {
+            color: #492a56;
+        }
+        p{
+            color: #492a56;
+        }
+    }
+    main {
+        background-color: #492a56;
+
+        form {
+            input {
+                background-color: #492a56;
+                color: #FFF;
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.726);
+                }
+            }
+
+        }
+    }
+
+    .main-content {
+
+        h2, p {
+            color: #FFF;
+        }
+    }
+}
+
 /*responsivo*/
 @media only screen and (max-width: 768px) {
     #page-auth {
@@ -161,7 +193,7 @@
         }
 
         img {
-            max-width: 320px;
+            max-width: 100%;
         }
 
         strong {

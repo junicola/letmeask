@@ -1,4 +1,7 @@
 #page-room {
+    min-height: 100vh;
+    height: 100%;
+
     header {
         padding: 24px;
         border-bottom: 1px solid #e2e2e2;
@@ -123,7 +126,74 @@
             margin-top: 32px;
         }
     }
+
 }
+
+#page-room.dark {
+       background-color: #492a56;
+
+       header {
+           border-bottom: 1px solid #e1a1c9;
+           .content {
+               .room-code {
+                   background-color: transparent;
+                   color: #FFF;
+               }
+               
+           }
+        }
+
+        main {
+
+            .room-title {
+
+                 h1{
+                     color: #FFF;
+                 }
+             }
+
+             form {
+                 textarea { 
+                    background-color: #6d4a7b;
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.767);
+                    }
+                 }
+                 .form-footer {
+                     span {
+                        color: rgba(255, 255, 255, 0.466);
+                     }
+                 }
+             }
+             .question-list {
+                .question {
+                    background-color: #6d4a7b;
+                    color: rgba(255, 255, 255, 0.767);
+
+                    p, span {
+                        color: rgba(255, 255, 255, 0.589);
+                    }
+
+                    &.highlighted {
+                        background-color: rgba(139, 74, 134, 0.733);
+                        p, span {
+                            color: rgba(255, 255, 255, 0.767);
+                        }
+                    }
+
+                    &.answered {
+                        background-color: #63526b;
+                        p, span {
+                            color: rgba(255, 255, 255, 0.315);
+                        }
+                    }
+                }
+             }
+        }
+        .button.outlined {
+            background-color: transparent;
+        }
+   }
 
 @media only screen and (max-width: 768px) {
     #page-room {

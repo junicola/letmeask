@@ -11,7 +11,7 @@
 
     
     &.highlighted {
-        background: #fff0f6;
+        background: #ffebfc;
         border: 1px solid #FF93D6;
         
         footer .user-info span {
@@ -59,7 +59,7 @@
             border: 0;
             background: transparent;
             cursor: pointer;
-            transition: filter 0.4s;
+            transition: 0.3s;
 
             &.like-button {
                 display: flex;
@@ -74,11 +74,14 @@
                         stroke: #FF93D6;
                     }
                 }
+                &:hover{
+                        svg path {
+                            stroke: #ee56b4;
+                        }
+                   
+                }
             }
 
-            &:hover{
-                filter: brightness(0.6);
-            }
         }
     }
 }
