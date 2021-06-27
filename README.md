@@ -2,9 +2,11 @@
 
 # Letmeask - em desenvolvimento :construction:
 
-Aplicação web para compartilhamento, classificação (baseada na quantidade de likes) e destaque de perguntas! :sparkles:
 
-Desenvolvido durante a <strong>6° NLW da Rocketseat </strong> :rocket:
+### [Aplicação hospedada no Firebase](https://letmeask-fa059.web.app/)
+
+
+Desenvolvido durante a <strong>6° NLW da Rocketseat </strong> :rocket: Aplicação web para compartilhamento, classificação (baseada na quantidade de likes) e destaque de perguntas! :sparkles:
 
 <strong>Como funciona? </strong>
 Crie uma sala para receber perguntas. Ao criar, um código será gerado e você poderá compartilhá-lo para que outras pessoas possam entrar na sala e mandar perguntas.
@@ -54,4 +56,4 @@ Crie uma sala para receber perguntas. Ao criar, um código será gerado e você 
 - [ ] criar modais (react-modal)
 - [ ] separar pasta de componentes
 - [ ] retirar destaque/marcar como respondida da pergunta 
-- [ ] deploy github pages
+- [x] deploy firebase

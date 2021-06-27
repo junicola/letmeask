@@ -20,7 +20,16 @@
 .firebaserc
 database.rules.json
 firebase.json
-.firebase
+/.firebase
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
 
 npm-debug.log*
 yarn-debug.log*
